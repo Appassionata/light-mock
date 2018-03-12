@@ -60,7 +60,7 @@ module.exports = options => {
             return router
         }
 
-    let routesPath = path.join(process.cwd(), config.routesPath || './routes.js')
+    let routesPath = path.join(process.cwd(), config.routesPath || './routes.config.js')
     let router = parseRouter(require(routesPath))
     // watch routes file
     chokidar.watch(routesPath)
