@@ -1,2 +1,1 @@
-webpack-light-mock
----
+# webpack-light-mock
