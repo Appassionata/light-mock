@@ -63,7 +63,7 @@ module.exports = options => {
     let routesPath = path.join(process.cwd(), config.routesPath || './routes.js')
     let router = parseRouter(require(routesPath))
     // watch routes file
-    chokidar.watch(routesPath, {alwaysState: true, usePolling: true})
+    chokidar.watch(routesPath)
         .on('change', path => {
             log(`changed ${path}`)
             try {
