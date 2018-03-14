@@ -28,9 +28,9 @@ module.exports = {
 ```
 options
 ---
-* `routesPath` (string). Paths to routes config file, dirs to be watched
+* `routesPath` (string). Path to routes config file, dir to be watched
 
-* `originMid` (function). Origin before options in devServer config
+* `originMid` (function). Origin ``before`` option in devServer config
 
 * `baseHandler` (function). If provided, all request matched routes config will pass through this function
 
